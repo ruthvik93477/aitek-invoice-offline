@@ -44,7 +44,7 @@
             <div class="row-md-4 p-2 text-start">
                 <label for="invoiceNumber" class="form-label ms-2"><b class="text-danger star">* </b><b>Invoice No</b></label>
                 <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="invoiceNumber" name="invoiceNumber" required placeholder="Data comes here automatically" readonly>
+                    <input type="text" class="form-control" id="invoiceNumber" name="invoiceNumber" required placeholder="Please enter invoice number">
                     <div class="invalid-feedback">
                         Invoice number is required
                     </div>
@@ -124,8 +124,6 @@
     </div>
 </body>
 <script>
-    let ans = sessionStorage.getItem('ans');
-     document.getElementById('invoiceNumber').value = ans;
     function submitAll(){
         const invoiceNumber = document.getElementById("invoiceNumber").value;
         const date = document.getElementById("date").value;
